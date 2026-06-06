@@ -211,6 +211,7 @@ determine the exact padding."
                                         :background macs-yellow-blend)
    (eglot-semantic-variable             :foreground fg
                                         :background bg)
+   (eglot-type-hint-face                :foreground macs-grey-text)
    (font-lock-keyword-face              :foreground fg
                                         :background bg)
    (font-lock-operator-face             :foreground macs-grey-text
@@ -231,6 +232,8 @@ determine the exact padding."
                                         :background bg)
    (font-lock-doc-face                  :foreground macs-yellow-text
                                         :background macs-yellow-blend)
+   (font-lock-variable-use-face         :foreground fg
+                                        :background bg)
 
    (lazy-highlight :background macs--light-accent
                    :foreground macs-blue-text
