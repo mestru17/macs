@@ -37,13 +37,15 @@ determine the exact padding."
 
   ;; name        default   256       16
   (
-   (macs-base1           '("#605a52" "#666666" "black"))
+   ;; (macs-base1           '("#605a52" "#666666" "black"))
+   (macs-base1           '("#000000" "#666666" "black"))
    (macs-base2           '("#93836c" "#999966" "brightblack"))
    (macs-base3           '("#b9a992" "#cc9999" "brightblack"))
    (macs-base4           '("#dcd3c6" "#cccccc" "brightblack"))
    (macs-base5           '("#e4ddd2" "#cccccc" "brightblack"))
    (macs-base6           '("#f1ece4" "#ffffcc" "brightblack"))
-   (macs-base7           '("#f7f3ee" "#ffffff" "brightblack"))
+   ;; (macs-base7           '("#f7f3ee" "#ffffff" "brightblack"))
+   (macs-base7           '("#ffffff" "#ffffff" "brightblack"))
 
    (macs-accent          '("#6a4dff" "#6666ff" "brightblue"))
 
@@ -57,25 +59,35 @@ determine the exact padding."
    (macs-red             '("#f00000" "#ff0000" "red"))
    (macs-red-blend       '("#f6cfcb" "#ffcccc" "brightred"))
 
-   (macs-green-text      '("#525643" "#666633" "brightblack"))
+   ;; (macs-green-text      '("#525643" "#666633" "brightblack"))
+   (macs-green-text      '("#345f00" "#666633" "brightblack"))
    (macs-green-text-sec  '("#81895d" "#999966" "brightblack"))
    (macs-green           '("#84bd00" "#99cc00" "green"))
-   (macs-green-blend     '("#e2e9c1" "#ccffcc" "brightgreen"))
+   ;; (macs-green-blend     '("#e2e9c1" "#ccffcc" "brightgreen"))
+   (macs-green-blend     '("#e9fad3" "#ccffcc" "brightgreen"))
 
    (macs-teal-text       '("#465953" "#336666" "brightblack"))
    (macs-teal-text-sec   '("#5f8c7d" "#669966" "brightblack"))
    (macs-teal            '("#00bda4" "#00cc99" "cyan"))
    (macs-teal-blend      '("#d2ebe3" "#ccffcc" "brightcyan"))
 
-   (macs-blue-text       '("#4c5361" "#336666" "brightblack"))
+   ;; (macs-blue-text       '("#4c5361" "#336666" "brightblack"))
+   (macs-blue-text       '("#025e80" "#336666" "brightblack"))
    (macs-blue-text-sec   '("#7382a0" "#669999" "brightblack"))
    (macs-blue            '("#75a3ff" "#6699ff" "blue"))
-   (macs-blue-blend      '("#dde4f2" "#ccccff" "brightblue"))
+   ;; (macs-blue-blend      '("#dde4f2" "#ccccff" "brightblue"))
+   (macs-blue-blend      '("#d6f2fd" "#ccccff" "brightblue"))
 
-   (macs-purple-text     '("#614c61" "#663366" "brightblack"))
+   ;; (macs-purple-text     '("#614c61" "#663366" "brightblack"))
+   (macs-purple-text     '("#7d02d1" "#663366" "brightblack"))
    (macs-purple-text-sec '("#9c739c" "#996699" "brightblack"))
    (macs-purple          '("#ce5cff" "#cc66ff" "purple"))
-   (macs-purple-blend    '("#f1ddf1" "#ffccff" "brightpurple"))
+   ;; (macs-purple-blend    '("#f1ddf1" "#ffccff" "brightpurple"))
+   (macs-purple-blend    '("#efe0fa" "#ffccff" "brightpurple"))
+
+   (macs-grey-text       '("#a0a0a0" "#666666" "black"))
+   (macs-yellow-text     '("#6c6400" "#666633" "brightblack"))
+   (macs-yellow-blend    '("#fffab4" "#ffcccc" "brightorange"))
 
    (bg         `(,(car macs-base7) nil       nil            ))
    (bg-alt     `(,(car macs-base6) nil       nil            ))
@@ -153,8 +165,8 @@ determine the exact padding."
 
 
   ;;;; Base theme face overrides
-  ((font-lock-builtin-face :inherit 'italic :foreground fg :extend t)
-   ((font-lock-doc-face &override) :slant 'italic)
+  (;; (font-lock-builtin-face :inherit 'italic :foreground fg :extend t)
+   ;; ((font-lock-doc-face &override) :slant 'italic)
    ;; (font-lock-type-face :inherit 'default)
    ;; (font-lock-variable-name-face
    ;;  :foreground (if -no-highlight-variables fg macs-blue-text)
@@ -189,15 +201,19 @@ determine the exact padding."
                                         :background nil)
    (eglot-semantic-method               :foreground fg
                                         :background bg)
-   (eglot-semantic-operator             :foreground fg
+   (eglot-semantic-operator             :foreground macs-grey-text
                                         :background bg)
    (eglot-semantic-enumMember           :foreground fg
                                         :background bg)
-   (eglot-semantic-comment              :foreground macs-orange-text
-                                        :background macs-orange-blend)
+   (eglot-semantic-comment              :foreground macs-yellow-text
+                                        :background macs-yellow-blend)
+   (eglot-semantic-documentation        :foreground macs-yellow-text
+                                        :background macs-yellow-blend)
+   (eglot-semantic-variable             :foreground fg
+                                        :background bg)
    (font-lock-keyword-face              :foreground fg
                                         :background bg)
-   (font-lock-operator-face             :foreground fg
+   (font-lock-operator-face             :foreground macs-grey-text
                                         :background bg)
    (font-lock-function-name-face        :foreground macs-blue-text
                                         :background macs-blue-blend)
@@ -207,6 +223,14 @@ determine the exact padding."
                                         :background bg)
    (font-lock-constant-face             :foreground macs-purple-text
                                         :background macs-purple-blend)
+   (font-lock-builtin-face              :foreground fg
+                                        :background bg)
+   (font-lock-bracket-face              :foreground macs-grey-text
+                                        :background bg)
+   (font-lock-delimiter-face            :foreground macs-grey-text
+                                        :background bg)
+   (font-lock-doc-face                  :foreground macs-yellow-text
+                                        :background macs-yellow-blend)
 
    (lazy-highlight :background macs--light-accent
                    :foreground macs-blue-text

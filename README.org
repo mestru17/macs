@@ -10,7 +10,9 @@ Clean and simple, and doesn't look a clown threw up on your screen. Inspired by 
 
 | Element              | Foreground | Background |
 |----------------------+------------+------------|
-| String               | =#525643=  | =#e2e9c1=  |
-| Constant             | =#614c61=  | =#f1ddf1=  |
-| Comment              | =#5b5143=  | =#f7e0c3=  |
-| Top level definition | =#4c5361=  | =#dde4f2=  |
+| Text                 | =#000000=  | =#ffffff=  |
+| Punctuation          | =#a0a0a0=  | =#ffffff=  |
+| String               | =#345f00=  | =#e9fad3=  |
+| Constant             | =#7d02d1=  | =#efe0fa=  |
+| Comment              | =#6c6400=  | =#fffab4=  |
+| Top level definition | =#025e80=  | =#d6f2fd=  |
