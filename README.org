@@ -1,6 +1,6 @@
 #+title: [ma]thias [c]olor [s]cheme
 
-Clean and simple, and doesn't look a clown threw up on your screen. Inspired by this: https://tonsky.me/blog/syntax-highlighting.
+Clean and simple color scheme. No rainbow vomit. Inspired by this: https://tonsky.me/blog/syntax-highlighting.
 
 #+caption: macs in doom emacs
 #+name: doom.png
