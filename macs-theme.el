@@ -187,51 +187,55 @@ determine the exact padding."
    (font-lock-string-face               :background macs-green-blend
                                         :foreground macs-green-text )
 
+   (eglot-semantic-comment              :foreground macs-yellow-text
+                                        :background macs-yellow-blend)
+   (eglot-semantic-declaration          :foreground nil
+                                        :background nil)
+   (eglot-semantic-documentation        :foreground macs-yellow-text
+                                        :background macs-yellow-blend)
+   (eglot-semantic-enum                 :foreground macs-blue-text
+                                        :background macs-blue-blend)
+   (eglot-semantic-enumMember           :foreground fg
+                                        :background bg)
+   (eglot-semantic-function             :foreground nil
+                                        :background nil)
    (eglot-semantic-keyword              :foreground fg
+                                        :background bg)
+   (eglot-semantic-method               :foreground fg
                                         :background bg)
    (eglot-semantic-namespace            :foreground fg
                                         :background bg)
-   (eglot-semantic-struct               :foreground fg
-                                        :background bg)
-   (eglot-semantic-declaration          :foreground nil
-                                        :background nil)
-   (eglot-semantic-enum                 :foreground macs-blue-text
-                                        :background macs-blue-blend)
-   (eglot-semantic-function             :foreground nil
-                                        :background nil)
-   (eglot-semantic-method               :foreground fg
-                                        :background bg)
    (eglot-semantic-operator             :foreground macs-grey-text
                                         :background bg)
-   (eglot-semantic-enumMember           :foreground fg
+   (eglot-semantic-struct               :foreground fg
                                         :background bg)
-   (eglot-semantic-comment              :foreground macs-yellow-text
-                                        :background macs-yellow-blend)
-   (eglot-semantic-documentation        :foreground macs-yellow-text
-                                        :background macs-yellow-blend)
    (eglot-semantic-variable             :foreground fg
                                         :background bg)
    (eglot-type-hint-face                :foreground macs-grey-text)
-   (font-lock-keyword-face              :foreground fg
-                                        :background bg)
-   (font-lock-operator-face             :foreground macs-grey-text
-                                        :background bg)
-   (font-lock-function-name-face        :foreground macs-blue-text
-                                        :background macs-blue-blend)
-   (font-lock-function-call-face        :foreground fg
-                                        :background bg)
-   (font-lock-type-face                 :foreground fg
-                                        :background bg)
-   (font-lock-constant-face             :foreground macs-purple-text
-                                        :background macs-purple-blend)
-   (font-lock-builtin-face              :foreground fg
-                                        :background bg)
    (font-lock-bracket-face              :foreground macs-grey-text
                                         :background bg)
+   (font-lock-builtin-face              :foreground fg
+                                        :background bg)
+   (font-lock-comment-face              :foreground macs-yellow-text
+                                        :background macs-yellow-blend)
+   (font-lock-constant-face             :foreground macs-purple-text
+                                        :background macs-purple-blend)
    (font-lock-delimiter-face            :foreground macs-grey-text
                                         :background bg)
    (font-lock-doc-face                  :foreground macs-yellow-text
                                         :background macs-yellow-blend)
+   (font-lock-function-call-face        :foreground fg
+                                        :background bg)
+   (font-lock-function-name-face        :foreground macs-blue-text
+                                        :background macs-blue-blend)
+   (font-lock-keyword-face              :foreground fg
+                                        :background bg)
+   (font-lock-operator-face             :foreground macs-grey-text
+                                        :background bg)
+   (font-lock-type-face                 :foreground fg
+                                        :background bg)
+   (font-lock-variable-name-face        :foreground fg
+                                        :background bg)
    (font-lock-variable-use-face         :foreground fg
                                         :background bg)
 
