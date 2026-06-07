@@ -193,20 +193,22 @@ determine the exact padding."
                                         :background nil)
    (eglot-semantic-documentation        :foreground macs-yellow-text
                                         :background macs-yellow-blend)
-   (eglot-semantic-enum                 :foreground macs-blue-text
-                                        :background macs-blue-blend)
+   (eglot-semantic-enum                 :foreground fg
+                                        :background bg)
    (eglot-semantic-enumMember           :foreground fg
                                         :background bg)
    (eglot-semantic-function             :foreground nil
                                         :background nil)
    (eglot-semantic-keyword              :foreground fg
                                         :background bg)
-   (eglot-semantic-method               :foreground fg
-                                        :background bg)
+   (eglot-semantic-method               :foreground nil
+                                        :background nil)
    (eglot-semantic-namespace            :foreground fg
                                         :background bg)
    (eglot-semantic-operator             :foreground macs-grey-text
                                         :background bg)
+   (eglot-semantic-static               :foreground nil
+                                        :background nil)
    (eglot-semantic-struct               :foreground fg
                                         :background bg)
    (eglot-semantic-variable             :foreground fg
